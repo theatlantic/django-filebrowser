@@ -130,6 +130,7 @@ ul.pulldown-versions a {
     padding: 5px 30px 5px 10px;
     font-weight: bold;
     white-space: nowrap;
+    color: #fff !important;
 }
 ul.pulldown-versions li:first-child a {
     border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px;

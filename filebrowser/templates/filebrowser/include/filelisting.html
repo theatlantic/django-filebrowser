@@ -10,7 +10,7 @@
     <tr class="{% cycle 'row1' 'row2' %}{% if fileobject.filetype == "Folder" %} fb_folder{% endif %}">
         
         <!-- FILESELECT FOR FILEBROWSEFIELD -->
-        {% if query.pop == "1" %}
+        {% if query.pop == "1" or query.pop == "3" %}
             <td class="fb_icon">
                 {% selectable fileobject.filetype query.type %}
                 {% if selectable %}

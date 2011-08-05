@@ -118,6 +118,7 @@ class SelectableNode(template.Node):
             format = self.format.resolve(context)
         except template.VariableDoesNotExist:
             format = ''
+        format = format.lower()
         if filetype and format and filetype in SELECT_FORMATS[format]:
             selectable = True
         elif filetype and format and filetype not in SELECT_FORMATS[format]:
@@ -127,7 +128,7 @@ class SelectableNode(template.Node):
         context['selectable'] = selectable
         return ''
 
-
+@register.tag('selectable')
 def selectable(parser, token):
     
     try:
@@ -137,4 +138,3 @@ def selectable(parser, token):
         
     return SelectableNode(filetype, format)
     
-register.tag(selectable)
