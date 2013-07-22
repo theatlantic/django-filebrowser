@@ -8,6 +8,44 @@ fieldset.grp-module p.grp-text {
     margin: 4px 0 1px;
 }
 
+body.grp-filebrowser .row .vTextField,
+body.grp-filebrowser .grp-row .vTextField, 
+body.grp-filebrowser .row .vURLField,
+body.grp-filebrowser .grp-row .vURLField, 
+body.grp-filebrowser .row .vFileBrowseField,
+body.grp-filebrowser .grp-row .vFileBrowseField, 
+body.grp-filebrowser .row textarea,
+body.grp-filebrowser .grp-row textarea, 
+body.grp-filebrowser .row .vLargeTextField,
+body.grp-filebrowser .grp-row .vLargeTextField, 
+body.grp-filebrowser .row .vXMLLargeTextField,
+body.grp-filebrowser .grp-row .vXMLLargeTextField, 
+body.grp-filebrowser .row .vAutocompleteSearchField,
+body.grp-filebrowser .grp-row .vAutocompleteSearchField, 
+body.grp-filebrowser .row .vM2MAutocompleteSearchField,
+body.grp-filebrowser .grp-row .vM2MAutocompleteSearchField {
+    width: 538px;
+}
+body.grp-filebrowser .row select,
+body.grp-filebrowser .grp-row select {
+    max-width: 538px;
+}
+
+body.grp-filebrowser .grp-row:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+    width: 0;
+}
+
+.g-d-6, .l-2cr-fluid.l-d-6 .c-1, .rtl .l-2c-fluid.l-d-6 .c-1 {
+    margin-right: 10px;
+}
+
+body.grp-filebrowser.grp-change-list #grp-content #content-inner {
+    bottom: 0;
+}
 
 /*  Filebrowser Table
 ------------------------------------------------------------------------------------------------------ */
