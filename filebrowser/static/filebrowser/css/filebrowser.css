@@ -8,6 +8,59 @@ fieldset.grp-module p.grp-text {
     margin: 4px 0 1px;
 }
 
+body.grp-filebrowser .row .vTextField,
+body.grp-filebrowser .grp-row .vTextField, 
+body.grp-filebrowser .row .vURLField,
+body.grp-filebrowser .grp-row .vURLField, 
+body.grp-filebrowser .row .vFileBrowseField,
+body.grp-filebrowser .grp-row .vFileBrowseField, 
+body.grp-filebrowser .row textarea,
+body.grp-filebrowser .grp-row textarea, 
+body.grp-filebrowser .row .vLargeTextField,
+body.grp-filebrowser .grp-row .vLargeTextField, 
+body.grp-filebrowser .row .vXMLLargeTextField,
+body.grp-filebrowser .grp-row .vXMLLargeTextField, 
+body.grp-filebrowser .row .vAutocompleteSearchField,
+body.grp-filebrowser .grp-row .vAutocompleteSearchField, 
+body.grp-filebrowser .row .vM2MAutocompleteSearchField,
+body.grp-filebrowser .grp-row .vM2MAutocompleteSearchField {
+    width: 538px;
+}
+body.grp-filebrowser .row select,
+body.grp-filebrowser .grp-row select {
+    max-width: 538px;
+}
+
+body.grp-filebrowser .grp-row:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+    width: 0;
+}
+
+.g-d-6, .l-2cr-fluid.l-d-6 .c-1, .rtl .l-2c-fluid.l-d-6 .c-1 {
+    margin-right: 10px;
+}
+
+body.grp-filebrowser.grp-change-list #grp-content #content-inner {
+    bottom: 0;
+}
+
+body.grp-filebrowser.grp-popup ul#breadcrumbs,
+body.grp-filebrowser.grp-popup div#breadcrumbs {
+    top: 0;
+}
+
+body.grp-filebrowser.grp-popup #header, body.grp-filebrowser.grp-popup #grp-navigation {
+    display: none;
+}
+body.grp-filebrowser.grp-popup ul.grp-messagelist {
+    top: 28px;
+}
+body.grp-filebrowser.grp-popup #grp-content {
+    top: 28px;
+}
 
 /*  Filebrowser Table
 ------------------------------------------------------------------------------------------------------ */
@@ -349,4 +402,85 @@ body.rtl .qq-upload-list li a {
     margin-right: 0;
     margin-left: 10px;
     vertical-align: baseline;
+}
+
+body.grp-filebrowser {
+	position: static;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+body.grp-filebrowser #container,
+body.grp-filebrowser #grp-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+body.grp-filebrowser #content,
+body.grp-filebrowser #grp-content {
+	position: absolute;
+	top: 56px;
+    margin: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	width: auto;
+}
+body.grp-filebrowser.change-list #content,
+body.grp-filebrowser.change-list #grp-content {
+	bottom: 33px;
+}
+
+body.grp-filebrowser.change-list #grp-content {
+    bottom: 0;
+}
+body.grp-filebrowser.change-list.popup #content,
+body.grp-filebrowser.change-list.popup #grp-content {
+	top: 0;
+	bottom: 0;
+}
+body.grp-filebrowser #content-inner {
+	position: absolute;
+	padding: 0 20px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	overflow: auto;
+}
+body.grp-filebrowser #grp-content #content-inner {
+    bottom: 33px;
+    height: auto;
+}
+body.grp-filebrowser #footer,
+body.grp-filebrowser .grp-fixed-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+body.grp-filebrowser .module.footer,
+body.grp-filebrowser .grp-module.grp-fixed-footer {
+	margin: 0;
+	right: 0;
+	width: auto;
+	left: 0;
+	padding: 2px 5px;
+	line-height: 17px;
+	color: #fff;
+	height: 34px;
 }

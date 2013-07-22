@@ -1,7 +1,7 @@
 {% load i18n fb_tags %}
 {% load url from future %}
 
-<ul class="grp-horizontal-list">
+<ul id="breadcrumbs">
     {% if not query.pop %}
         <li><a href="{% url 'admin:index' %}">{% trans "Home" %}</a></li>
     {% endif %}
