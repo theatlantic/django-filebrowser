@@ -75,11 +75,11 @@
 {% block breadcrumbs %}{% include "filebrowser/include/breadcrumbs.html" %}{% endblock %}
 
 <!-- OBJECT-TOOLS -->
-{% block object-tools %}
-    <ul class="grp-object-tools">
-        <li><a href="{% url 'filebrowser:fb_createdir' %}{% query_string '' 'p' %}">{% trans "New Folder" %}</a></li>
-        <li><a href="{% url 'filebrowser:fb_upload' %}{% query_string '' 'p' %}" class="grp-state-focus">{% trans "Upload" %}</a></li>
-    </ul>
+{% block object_tools %}
+    <div class="add-tools">
+        <a href="{% url 'filebrowser:fb_upload' %}{% query_string '' 'p' %}" class="rounded-button blue">{% trans "Upload" %}</a>
+        <a href="{% url 'filebrowser:fb_createdir' %}{% query_string '' 'p' %}" class="rounded-button blue">{% trans "New Folder" %}</a>
+    </div>
 {% endblock %}
 
 <!-- CONTENT -->
